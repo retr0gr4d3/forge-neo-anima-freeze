@@ -1,14 +1,14 @@
 <h1 align="center">Forge Neo - Retro's Branch</h1>
 
 <p align="center"><sup>
-[ You are on Retro's branch. Click Neo to switch back to the original. ]<br>[ <a href="https://github.com/retr0gr4d3/forge-neo-anima-freeze/tree/neo#forge-neo-anima-freeze---neo">Neo</a> | Retro ]
+[ You are on Retro's branch. Click Neo to switch back to 2.13's release. ]<br>[ <a href="https://github.com/retr0gr4d3/forge-neo-anima-freeze/tree/neo#forge-neo-anima-freeze---neo">Neo</a> | Retro ]
 <br>
 
 <p align="center"><img src="html\ui.webp" width=512 alt="UI"></p>
 
 <p align="center"><sup>
-Personal branch of <b>"Neo"</b>, frozen on commit <a href="https://github.com/Haoming02/sd-webui-forge-classic/commit/7465c0e9c2c2c1a093673ed8be3fc53049dd35a4">7465c0e</a>.<br>
-This branch is based on release 2.13 of Haoming02's Forge Neo. Dedicated to my own customisations and preset configurations.
+Personal branch of <b>"Neo"</b>, forked from commit <a href="https://github.com/Haoming02/sd-webui-forge-classic/commit/7465c0e9c2c2c1a093673ed8be3fc53049dd35a4">7465c0e</a>.<br>
+This branch is based on release 2.13 of Haoming02's Forge Neo. Dedicated to my own customisations and preset configurations.<br>Certain commits from upstream have and will be pulled in.
 
 <blockquote><i>
 <b>"Neo"</b> mainly serves as an continuation for the `latest` version of Forge, which was built on <a href="https://github.com/gradio-app/gradio">Gradio</a> `4.40.0` before lllyasviel became too busy... Additionally, this fork is focused on optimization and usability, with the main goal of being able to run the latest models without any bloatwares.<br>
