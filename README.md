@@ -17,8 +17,15 @@ This branch is based on release 2.13 of Haoming02's Forge Neo. Dedicated to my o
 
 <hr>
 
+### Changes
+
+- [X] Implement a custom theme as default [886276e]
+  - You can customise this theme in `/theme/ui_theme.json` to your own taste without editing or messing with the basic themes available in UI settings
+- [X] Added commandline argument `--theme dark` by default to the `webui-user.bat` [6ad4544]
+
+### Original overview
 <details>
-<summary>[Features]</summary>
+<summary>Features</summary>
 
 <br>
 
@@ -102,8 +109,10 @@ This branch is based on release 2.13 of Haoming02's Forge Neo. Dedicated to my o
 - [X] Update recommended Python to `3.13.12`
 - [X] Many more... :tm:
 </details>
+
+### Commandline
 <details>
-<summary>[Commandline Arguments]</summary>
+<summary>Arguments</summary>
 
 <br>
 
@@ -147,55 +156,43 @@ This branch is based on release 2.13 of Haoming02's Forge Neo. Dedicated to my o
 - `--autotune`: Enable the `torch.backends.cudnn.benchmark` option, although this can be slow
 
 </details>
-<details>
-    <summary>[Installation Methods]</summary>
 
-<br>
+### Installation
+<details>
+    <summary>Instructions</summary>
 
 1. Install **[git](https://git-scm.com/downloads)**
 2. Clone the Repo
-3. Setup the environment using **only one** of these two methods:
+3. Install **[uv](https://github.com/astral-sh/uv#installation)**
+4. Set up **venv**
 
-<details>
-<summary>3a. Using UV</summary>
-
-- Install **[uv](https://github.com/astral-sh/uv#installation)**
-- Set up **venv**
     ```bash
     cd sd-webui-forge-neo
     uv venv venv --python 3.13 --seed
     ```
-- Add the `--uv` flag to `webui-user.bat`
 
-</details>
-<details>
-<summary>3b. Install Python [deprecated method]</summary>
-
-- Get **[Python 3.13.12](https://www.python.org/downloads/release/python-31312/)**
-    - Remember to enable `Add Python to PATH`
-
-</details>
-
-4. **(Optional)** Configure [Commandline](#commandline)
-5. **(Optional)** Check out [Extra Installations](https://github.com/Haoming02/sd-webui-forge-classic/wiki/Extra-Installations) in Haoming02's wiki for how to install `git`, `uv`, and `FFmpeg`.
-6. Launch the WebUI via `webui-user.bat`
-7. During the first launch, it will automatically install all the requirements
-8. Once the installation is finished, the WebUI will start in a browser automatically
+5. Add the `--uv` flag to `webui-user.bat`
+6. **(Optional)** Configure [Commandline](#commandline)
+7. **(Optional)** Check out [Extra Installations](https://github.com/Haoming02/sd-webui-forge-classic/wiki/Extra-Installations) in Haoming02's wiki for how to install `git`, `uv`, and `FFmpeg`.
+8. Launch the WebUI via `webui-user.bat`
+9. During the first launch, it will automatically install all the requirements
+10. Once the installation is finished, the WebUI will start in a browser automatically
 
 </details>
 
 > [!Tip]
-> Did you know you can import this into Stability Matrix?
+> Want to import this into Stability Matrix?
 
-- Install following the UV method above
+- Install following the [Installation Instructions](#ManualInstallation)
   - Ensure the python version you use matches one that is available in SM
-  - At the time of writing, the latest `Python 3.13` in SM is `3.13.5`
+  - At the time of writing, the latest `Python 3.13` in SM is `3.13.5`.
+  - Note: you may need to enable unsupported python versions in settings
 - Move the folder for it into SM's Data/Packages/ directory
   - It will show up in SM as an "Unknown Package" with an import button
 - Click the import button, then tell it:
-  - What package it is
-  - What commit version
-  - What version of python the package was set up with
+  - What package it is (Forge Neo)
+  - What commit version (7465c0e)
+  - What version of python the package was set up with (3.13.5)
 
 <hr>
 
