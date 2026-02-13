@@ -51,7 +51,11 @@ def reload_gradio_theme(theme_name=None):
     )
 
     if theme_name == "Default":
-        shared.gradio_theme = gr.themes.Default(**default_theme_args)
+        custom_theme_path = os.path.join(script_path, "theme", "ui_theme.json")
+        if os.path.exists(custom_theme_path):
+            shared.gradio_theme = gr.themes.ThemeClass.load(custom_theme_path)
+        else:
+            shared.gradio_theme = gr.themes.Default(**default_theme_args)
     else:
         try:
             theme_cache_dir = os.path.join(script_path, 'tmp', 'gradio_themes')
