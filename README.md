@@ -15,12 +15,10 @@ This branch is based on release 2.13 of Haoming02's Forge Neo. Dedicated to my o
 <p align="right">- <b>Haoming02</b><br>
 </i></blockquote>
 
-> [!Caution]
-> A lot of the original information has been reworded or removed from this README. <br>
-> Check upstream for a complete breakdown of features.
+<hr>
 
 <details>
-<summary>Summary of features</summary>
+<summary>[Features]</summary>
 
 <br>
 
@@ -105,7 +103,7 @@ This branch is based on release 2.13 of Haoming02's Forge Neo. Dedicated to my o
 - [X] Many more... :tm:
 </details>
 <details>
-<summary>Summary of commandline arguments</summary>
+<summary>[Commandline Arguments]</summary>
 
 <br>
 
@@ -150,7 +148,7 @@ This branch is based on release 2.13 of Haoming02's Forge Neo. Dedicated to my o
 
 </details>
 <details>
-    <summary>Summary of installation methods</summary>
+    <summary>[Installation Methods]</summary>
 
 <br>
 
@@ -187,9 +185,21 @@ This branch is based on release 2.13 of Haoming02's Forge Neo. Dedicated to my o
 </details>
 
 > [!Tip]
-> Experiencing issues?<br>
-> Please try and install a fresh installation from Haoming02's original repo if you encounter errors.<br>
-> Check out the [Wiki](https://github.com/Haoming02/sd-webui-forge-classic/wiki) that Haoming02 provides as it may contain the solution to your problem.
+> Did you know you can import this into Stability Matrix?
+
+- Install following the UV method above
+  - Ensure the python version you use matches one that is available in SM
+  - At the time of writing, the latest `Python 3.13` in SM is `3.13.5`
+- Move the folder for it into SM's Data/Packages/ directory
+  - It will show up in SM as an "Unknown Package" with an import button
+- Click the import button, then tell it:
+  - What package it is
+  - What commit version
+  - What version of python the package was set up with
+
+<hr>
+
+Experiencing issues? Please try installing a fresh installation from Haoming02's original repo if you encounter errors. Check out the [Wiki](https://github.com/Haoming02/sd-webui-forge-classic/wiki) that Haoming02 provides as it may contain the solution to your problem.
 
 <hr>
 
