@@ -1,27 +1,26 @@
-<h1 align="center">SD WebUI Forge - Neo - Anima Release Freeze</h1>
+<h1 align="center">Forge Neo - Retro's Branch</h1>
 
 <p align="center"><sup>
-[ You are on the Neo branch. Click Retro to switch. ]<br>[ Neo | <a href="https://github.com/retr0gr4d3/forge-neo-anima-freeze/tree/retro#forge-neo-anima-freeze---retro">Retro</a> ]
+[ You are on Retro's branch. Click Neo to switch back to the original. ]<br>[ <a href="https://github.com/retr0gr4d3/forge-neo-anima-freeze/tree/neo#forge-neo-anima-freeze---neo">Neo</a> | Retro ]
 <br>
 
 <p align="center"><img src="html\ui.webp" width=512 alt="UI"></p>
 
+<p align="center"><sup>
+Personal branch of <b>"Neo"</b>, frozen on commit <a href="https://github.com/Haoming02/sd-webui-forge-classic/commit/7465c0e9c2c2c1a093673ed8be3fc53049dd35a4">7465c0e</a>.<br>
+This branch is based on release 2.13 of Haoming02's Forge Neo. Dedicated to my own customisations and preset configurations.
 
 <blockquote><i>
 <b>"Neo"</b> mainly serves as an continuation for the `latest` version of Forge, which was built on <a href="https://github.com/gradio-app/gradio">Gradio</a> `4.40.0` before lllyasviel became too busy... Additionally, this fork is focused on optimization and usability, with the main goal of being able to run the latest models without any bloatwares.<br>
 <p align="right">- <b>Haoming02</b><br>
 </i></blockquote>
 
-My fork of "**Neo**" is a feature freeze of commit [7465c0e](https://github.com/Haoming02/sd-webui-forge-classic/commit/7465c0e9c2c2c1a093673ed8be3fc53049dd35a4), the addition of Anima. This branch will remain at the release of `2.13` as a baseline for any branches made within this repo. The main goal of this branch is to have a continually working environment without fear of config files being forcefully deleted by new features. The other branch of this repo is dedicated to my own customisations and preset configuration.
-
 > [!Caution]
 > A lot of the original information has been reworded or removed from this README. <br>
 > Check upstream for a complete breakdown of features.
 
-## Features
-
 <details>
-<summary>Click here for an overview of features as of Feb. 2026</summary>
+<summary>Summary of features</summary>
 
 <br>
 
@@ -105,11 +104,8 @@ My fork of "**Neo**" is a feature freeze of commit [7465c0e](https://github.com/
 - [X] Update recommended Python to `3.13.12`
 - [X] Many more... :tm:
 </details>
-
-## Commandline
-
 <details>
-<summary>Click here for commandline arguments</summary>
+<summary>Summary of commandline arguments</summary>
 
 <br>
 
@@ -153,11 +149,8 @@ My fork of "**Neo**" is a feature freeze of commit [7465c0e](https://github.com/
 - `--autotune`: Enable the `torch.backends.cudnn.benchmark` option, although this can be slow
 
 </details>
-
-## Installation
-
 <details>
-    <summary>Instructions for those who need them</summary>
+    <summary>Summary of installation methods</summary>
 
 <br>
 
@@ -193,31 +186,9 @@ My fork of "**Neo**" is a feature freeze of commit [7465c0e](https://github.com/
 
 </details>
 
-## Attention Functions
-
-> [!Caution]
-> Nowadays the native PyTorch `scaled_dot_product_attention` is usually as fast, and also more stable.
-
-<details>
-    <summary>Commandline options</summary>
-
-<br>
-
-> Do **not** just blindly install all of these.
-> The `--xformers`, `--flash`, and `--sage` args are only responsible for installing the packages, **not** whether its respective attention is used *(this also means you can remove them once the packages are successfully installed)*. To skip a specific attention, add the respective disable arg such as `--disable-sage`. **Forge Neo** tries to import the packages and automatically choose the first available attention function in the following order:
-1. `SageAttention`
-2. `FlashAttention`
-3. `xformers`
-4. `PyTorch`
-5. `Basic`
-
-
-</details>
-
-## Regarding Issues
-
 > [!Tip]
-> Please try and install a fresh installation from Haoming02's original repo if you encounter errors. <br>
+> Experiencing issues?<br>
+> Please try and install a fresh installation from Haoming02's original repo if you encounter errors.<br>
 > Check out the [Wiki](https://github.com/Haoming02/sd-webui-forge-classic/wiki) that Haoming02 provides as it may contain the solution to your problem.
 
 <hr>
